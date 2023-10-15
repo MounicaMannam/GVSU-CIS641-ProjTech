@@ -1,14 +1,12 @@
-#ProjTech
+# ProjTech
 
 Team members: 
-     Mounica Mannam
-     Pavan Madavaram
-     Caleb Cheruiyot
+   1.  Mounica Mannam
+   2. Pavan Madavaram
+   3. Caleb Cheruiyot
               
-
 # Introduction
-
-The project Online Bidding System is the software developed to simplify the communication process between the Seller and the Buyer. The software operators include the admin, the Seller, and the Buyers. The seller is responsible for selling a product in the site where other people can buy it based on their winning in the auction. This information is stored in the database along with their details. The admin can view Customer and Seller details and Auction details Auction winning report, Product details. When a person placed a bid on a particular product then he is eligible to place an order for the product when he wins the auction by the end of the date where auction closes. The system can thus reduce complexity in maintaining Bidding details and ease the process of Auction for a Product. The project is developed on ASP .Net platform and supported by a SQL database to store the user specific details.
+The project Online Bidding System is the software developed to simplify the communication process between the Seller and the Buyer. The software operators include the admin, the Seller, and the Buyers. The seller is responsible for selling a product in the site where other people can buy it based on their winning in the auction. This information is stored in the database along with their details. The admin can view Customer and Seller details and Auction details Auction winning report, Product details. When a person placed a bid on a particular product then he is eligible to place an order for the product when he wins the auction by the end of the date where auction closes. The system can thus reduce complexity in maintaining Bidding details and ease the process of Auction for a Product. The project is developed on the ASP .Net platform and supported by a SQL database to store the user-specific details.
 
 # Anticipated Technologies
 
@@ -39,7 +37,6 @@ Main activities for a web application development approach are:
 
 The project duration for collecting requirements and completing the mentioned modules is set at five weeks. This timeline provides a clear outline for the project schedule
   
-
 # Anticipated Problems
 
 -  Depending on the team's experience level, there may be varying levels of familiarity with .NET API Core. Ensuring that everyone is proficient in the technology can be a potential hurdle.
