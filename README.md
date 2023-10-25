@@ -6,8 +6,8 @@ The Online Bidding System project is to create a platform where community member
 
 - [Mounica Mannam](https://github.com/MounicaMannam/CIS641-HW2-mannam)
 - [Pavan Kumar Madavaram](https://github.com/madavarp/CIS641-HW2-Madavaram)
-- Member 3 (Role 5, Role 6)
-
+- [Caleb Cheruiyot](https://github.com/Calebcheruiyc/CIS641-HW2-Cheruiyot).
+  
 ## Prerequisites
 
 ## Run Instructions
