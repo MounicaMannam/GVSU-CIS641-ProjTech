@@ -20,4 +20,4 @@ Goals for next week (include responsibilities)
 Report module for admin dashboard
 * Implementing report module that is implementing bid activity report,notification to admin,winner report etc in admin module-- Pavan,Mounica,caleb
 * Front end design for admin dashboard and report module -- mounica
-* Testing the report module whether it is automatically geting reported for admin.s --caleb
+* Testing the report module whether it is automatically geting reported for admin --caleb
