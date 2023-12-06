@@ -206,6 +206,6 @@ The Online Bidding System is a web-based platform that facilitates users in plac
 
 
 
-
+https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Activity%20Diagrams.pdf
 
 
