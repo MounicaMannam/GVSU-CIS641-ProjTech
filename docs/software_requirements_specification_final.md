@@ -1,7 +1,6 @@
 #### Non-Functional Requirements
 ## Performance
 **NFR1:** The system shall be capable of accommodating a minimum of 1000 users simultaneously during peak operating hours.
-
 **NFR2:** The system shall ensure that the response time for placing a bid does not exceed 2 seconds under normal operational load.
 **NFR3:** The system shall demonstrate the capability to support up to 1 million bids per day without experiencing any degradation in performance.
 **NFR4:** Database queries within the system shall be optimized to execute in no more than 1 second for timely retrieval of bidding information.
