@@ -1,7 +1,6 @@
-# Software Requirements
-
 # Overview
 The Online Bidding System is a web-based platform that facilitates users in placing bids on various products. This document outlines the functional and non-functional requirements for the development of this system.
+# Software Requirements
 
 ## Functional Requirements
 
