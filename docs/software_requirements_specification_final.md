@@ -129,36 +129,78 @@ The Online Bidding System is a web-based platform that facilitates users in plac
 | NFR35 | The system shall be compatible with different screen sizes and resolutions. |
 
 
-# Change management plan
+# Change Management Plan
 
-Change Management Plan: Online Bidding System Implementation
-1. Training Program
-Customized Training Modules: Develop training materials tailored to different user roles  for the employees example the  engineers, project managers, and administrators
-Hands-on Workshops: Conduct interactive workshops and simulation exercises to ensure practical understanding and application of the online bidding system.
-E-Learning Platforms: Establish an online learning platform with video tutorials, FAQs, and user guides for ongoing reference.
-2. Ecosystem Integration:
-Integration Assessment: Conduct a thorough analysis of the customer's existing software ecosystem to identify potential integration points and challenges.
-API Compatibility: Ensure the online bidding system has robust APIs that facilitate seamless integration with commonly used software tools in the customer's domain.
-Pilot Integration: Implement a small-scale pilot integration to identify and resolve any unforeseen issues before full deployment.
-3. Issue Resolution Mechanism
-Dedicated Support Team: Establish a dedicated support team to address user concerns and issues promptly.
-User Feedback Loop: Implement a feedback loop to capture user feedback on an ongoing basis. Regularly analyze and address reported issues.
-Continuous Improvement: Have a structured process for continuous improvement, including regular updates and patches to address any identified issues or enhance system features.
-4. Change Management Strategies
-•	Clear Communication: Develop a comprehensive communication plan to articulate the benefits of the online bidding system. Address concerns and highlight success stories.
-•	Change Champions: Identify and empower influential individuals within the organization as change champions. These individuals can help sway opinions and garner support.
-•	Incentive Programs: Implement incentive programs to recognize and reward early adopters. This can create positive peer pressure and motivation.
-5. Managerial Engagement:
-•	Leadership Workshops: Conduct workshops for managers to showcase the strategic advantages of the online bidding system. Emphasize how it aligns with organizational goals.
-•	Managerial Training Programs: Offer specialized training programs for managers to enhance their understanding and usage of the system.
-•	Performance Metrics Alignment: Align performance metrics for managers with successful adoption and utilization of the new system.
-6. Organizational Alignment:
-•	Cross-Functional Collaboration: Encourage cross-functional collaboration by emphasizing how the online bidding system enhances communication and collaboration among different departments.
-•	Change Impact Assessment: Perform a comprehensive assessment of the impact of the new system on existing processes and workflows. Address and mitigate potential disruptions.
-7. Continuous Monitoring and Evaluation:
-•	Key Performance Indicators (KPIs): Establish KPIs to measure the success and impact of the online bidding system. Regularly evaluate these metrics and adjust strategies accordingly.
-•	User Surveys: Conduct periodic user surveys to gather qualitative feedback and insights. Use this information for further refinement and improvement.
-![image](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/assets/144478888/fcb8ef51-6b70-4f05-b242-5603e9749e17)
+## 1. Training Program
+
+- **Customized Training Modules:**
+  - Develop training materials tailored to different user roles for the employees (e.g., engineers, project managers, and administrators).
+
+- **Hands-on Workshops:**
+  - Conduct interactive workshops and simulation exercises to ensure practical understanding and application of the online bidding system.
+
+- **E-Learning Platforms:**
+  - Establish an online learning platform with video tutorials, FAQs, and user guides for ongoing reference.
+
+## 2. Ecosystem Integration
+
+- **Integration Assessment:**
+  - Conduct a thorough analysis of the customer's existing software ecosystem to identify potential integration points and challenges.
+
+- **API Compatibility:**
+  - Ensure the online bidding system has robust APIs that facilitate seamless integration with commonly used software tools in the customer's domain.
+
+- **Pilot Integration:**
+  - Implement a small-scale pilot integration to identify and resolve any unforeseen issues before full deployment.
+
+## 3. Issue Resolution Mechanism
+
+- **Dedicated Support Team:**
+  - Establish a dedicated support team to address user concerns and issues promptly.
+
+- **User Feedback Loop:**
+  - Implement a feedback loop to capture user feedback on an ongoing basis. Regularly analyze and address reported issues.
+
+- **Continuous Improvement:**
+  - Have a structured process for continuous improvement, including regular updates and patches to address any identified issues or enhance system features.
+
+## 4. Change Management Strategies
+
+- **Clear Communication:**
+  - Develop a comprehensive communication plan to articulate the benefits of the online bidding system. Address concerns and highlight success stories.
+
+- **Change Champions:**
+  - Identify and empower influential individuals within the organization as change champions. These individuals can help sway opinions and garner support.
+
+- **Incentive Programs:**
+  - Implement incentive programs to recognize and reward early adopters. This can create positive peer pressure and motivation.
+
+## 5. Managerial Engagement
+
+- **Leadership Workshops:**
+  - Conduct workshops for managers to showcase the strategic advantages of the online bidding system. Emphasize how it aligns with organizational goals.
+
+- **Managerial Training Programs:**
+  - Offer specialized training programs for managers to enhance their understanding and usage of the system.
+
+- **Performance Metrics Alignment:**
+  - Align performance metrics for managers with successful adoption and utilization of the new system.
+
+## 6. Organizational Alignment
+
+- **Cross-Functional Collaboration:**
+  - Encourage cross-functional collaboration by emphasizing how the online bidding system enhances communication and collaboration among different departments.
+
+- **Change Impact Assessment:**
+  - Perform a comprehensive assessment of the impact of the new system on existing processes and workflows. Address and mitigate potential disruptions.
+
+## 7. Continuous Monitoring and Evaluation
+
+- **Key Performance Indicators (KPIs):**
+  - Establish KPIs to measure the success and impact of the online bidding system. Regularly evaluate these metrics and adjust strategies accordingly.
+
+- **User Surveys:**
+  - Conduct periodic user surveys to gather qualitative feedback and insights. Use this information for further refinement and improvement.
 
 
 
