@@ -1,3 +1,28 @@
+### Performance
+
+|  ID  |                                                              Requirement                                                               |
+| :--: | :------------------------------------------------------------------------------------------------------------------------------------: |
+| NFR1 |            The system shall be capable of accommodating a minimum of 1000 users simultaneously during peak operating hours.            |
+| NFR2 |       The system shall ensure that the response time for placing a bid does not exceed 2 seconds under normal operational load.        |
+| NFR3 | Database queries within the system shall be optimized to execute in no more than 1 second for timely retrieval of bidding information. |
+| NFR4 |       The system shall maintain an uptime of 99.9% on a monthly basis, ensuring uninterrupted availability for bidding services.       |
+| NFR5 |          Web pages within the system shall load within 3 seconds to provide users with a responsive and efficient experience.          |
+| FR6  |    The system architecture shall be scalable to accommodate a 20% annual increase in user activity, ensuring sustained performance.    |
+| NFR7 |       The system shall ensure that the response time for placing a bid does not exceed 2 seconds under normal operational load.        |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Non-Functional Requirements
 ### Performance
   **NFR1:** The system shall be capable of accommodating a minimum of 1000 users simultaneously during peak operating hours.
