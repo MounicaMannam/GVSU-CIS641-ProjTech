@@ -8,61 +8,61 @@ The Online Bidding System is a web-based platform that facilitates users in plac
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR1 | Users should be able to register with a valid email and password. |
-| FR2 | Users should be able to log in using their registered email and password. |
-| FR3 | Users should have the option to recover their password through a secure process. |
-| FR4 | Users should be able to update their profile information after logging in. |
-| FR5 | The system should show Sign-Up link on Sign-In page and vice-versa. |
-| FR6 | Users should have the option to save their account information if needed. |
-| FR7 | Users should be able to view the agreement statements before signup. |
+| FR1 | Users shall be able to register with a valid email and password. |
+| FR2 | Users shall be able to log in using their registered email and password. |
+| FR3 | Users shall have the option to recover their password through a secure process. |
+| FR4 | Users shall be able to update their profile information after logging in. |
+| FR5 | The system shall show Sign-Up link on Sign-In page and vice-versa. |
+| FR6 | Users shall have the option to save their account information if needed. |
+| FR7 | Users shall be able to view the agreement statements before signup. |
 
 ### Bidding Management
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR8 | Users should be able to place bids on products they are interested in. |
-| FR9 | Users should be able to view their bid history, including active and past bids. |
-| FR10 | The system should automatically increment the bidding price by 15% for each bid. |
-| FR11 | Users should be able to update their bid amounts. |
-| FR12 | Users should be able to add products to their wishlist for future bidding. |
-| FR13 | Users should have the option to delete their bids. |
-| FR14 | The system should display the top five bidders for a selected product. |
+| FR8 | Users shall be able to place bids on products they are interested in. |
+| FR9 | Users shall be able to view their bid history, including active and past bids. |
+| FR10 | The system shall automatically increment the bidding price by 15% for each bid. |
+| FR11 | Users shall be able to update their bid amounts. |
+| FR12 | Users shall be able to add products to their wishlist for future bidding. |
+| FR13 | Users shall have the option to delete their bids. |
+| FR14 | The system shall display the top five bidders for a selected product. |
 
 ### Product Management
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR15 | Users should be able to add new products with details such as name, description, and images. |
-| FR16 | Users should be able to update product details. |
-| FR17 | Users should be able to delete products they no longer wish to auction. |
-| FR18 | Users should assign a category to each product. |
-| FR19 | Users should be able to view a list of all their products. |
-| FR20 | Users should be able to upload images for each product. |
-| FR21 | Admin should be able to view and manage similar products for analysis. |
+| FR15 | Users shall be able to add new products with details such as name, description, and images. |
+| FR16 | Users shall be able to update product details. |
+| FR17 | Users shall be able to delete products they no longer wish to auction. |
+| FR18 | Users shall assign a category to each product. |
+| FR19 | Users shall be able to view a list of all their products. |
+| FR20 | Users shall be able to upload images for each product. |
+| FR21 | Admin shall be able to view and manage similar products for analysis. |
 
 ### Product Images Management
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR22 | Users should be able to upload images for each product during the product addition process. |
-| FR23 | Users should have the option to delete images associated with a product. |
-| FR24 | Users should be able to view the images associated with a particular product. |
-| FR25 | The system should support the upload of multiple images for a single product. |
-| FR26 | Thumbnails of uploaded images should be automatically generated for product listings. |
-| FR27 | Users should be able to view all images in a gallery format for a particular product. |
-| FR28 | The system should validate that uploaded images maintain a consistent aspect ratio for display uniformity. |
+| FR22 | Users shall be able to upload images for each product during the product addition process. |
+| FR23 | Users shall have the option to delete images associated with a product. |
+| FR24 | Users shall be able to view the images associated with a particular product. |
+| FR25 | The system shall support the upload of multiple images for a single product. |
+| FR26 | Thumbnails of uploaded images shall be automatically generated for product listings. |
+| FR27 | Users shall be able to view all images in a gallery format for a particular product. |
+| FR28 | The system shall validate that uploaded images maintain a consistent aspect ratio for display uniformity. |
 
 ### Reporting and Admin Tools
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR29 | Admin should be able to generate reports on auction outcomes. |
-| FR30 | Admin should be able to view reports on user activity. |
-| FR31 | Admin should be able to generate reports on product trends. |
-| FR32 | Admin should be able to view reports on user transactions. |
-| FR33 | Admin should be able to add, update, or delete product categories. |
-| FR34 | Admin should be able to manage user accounts. |
-| FR35 | The system should perform regular backups of critical data. |
+| FR29 | Admin shall be able to generate reports on auction outcomes. |
+| FR30 | Admin shall be able to view reports on user activity. |
+| FR31 | Admin shall be able to generate reports on product trends. |
+| FR32 | Admin shall be able to view reports on user transactions. |
+| FR33 | Admin shall be able to add, update, or delete product categories. |
+| FR34 | Admin shall be able to manage user accounts. |
+| FR35 | The system shall perform regular backups of critical data. |
 
 
 
@@ -206,6 +206,5 @@ The Online Bidding System is a web-based platform that facilitates users in plac
 
 
 
-https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Activity%20Diagrams.pdf
 
 
