@@ -242,7 +242,10 @@ The Online Bidding System is a web-based platform that facilitates users in plac
 
 * [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Activity%20Diagrams.pdf] (Activity Diagrams.pdf)
 * [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Class%20Diagram.pdf] (Class Diagrams.pdf)
-* [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Use%20Case%20Diagrams.pdf]( Use Case Diagrams Diagrams.pdf)
+* [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Use%20Case%20Diagrams.pdf] (Use Case Diagrams Diagrams.pdf)
+*[https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Object%20Diagram.pdf] (Object Diagram.pdf
+* [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/CRC%20Card.pdf] (CRC Card.pdf)
+* [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/ProjTech%20Logo.jpg] (ProjTech Logo.pdf
 
 
 
