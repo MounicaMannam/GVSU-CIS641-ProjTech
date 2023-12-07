@@ -202,6 +202,47 @@ The Online Bidding System is a web-based platform that facilitates users in plac
 - **User Surveys:**
   - Conduct periodic user surveys to gather qualitative feedback and insights. Use this information for further refinement and improvement.
 
+# Traceability links
+
+<This section establishes a vital link between the various artifacts developed for the online bidding system and the specified project requirements. Through careful mapping, we ensure that every software artifact, including use case diagrams, class diagrams, and activity diagrams, is systematically connected to the relevant requirements. This traceability framework serves as a foundational element in validating the project's alignment with the defined functional and non-functional aspects. By providing a clear and comprehensive association between each artifact and its corresponding requirements, this section assures stakeholders of the thorough consideration given to every project facet, fostering transparency and accountability in the development process.>
+
+## Use Case Diagram Traceability
+
+| Artifact ID  | Artifact Name | Requirement ID |
+| :-------------: | :----------: | :----------: |
+| UseCase1 | Buyer | FR1, FR2, FR3. FR4, FR5, FR6, FR7, FR8, FR9, FR11, FR12, FR13, FR24, FR27 |
+| UseCase2| Seller | FR1, FR2, FR3. FR4, FR5, FR6, FR7,  FR15, FR16, FR17, FR18, FR19, FR20, FR22, FR123, FR24, FR27 |
+| UseCase3| Admin | FR21, FR29, FR30, FR31, FR32, FR33, FR34 |
+
+
+## Class Diagram Traceability
+
+| Artifact Name | Requirement ID |
+| :-------------: |:----------: |
+| classAdmin|FR21, FR29, FR30, FR31, FR32, FR33, FR34|
+|ClassBuyer | FR1, FR2, FR3, FR4, FR6, FR33, |
+|ClassSeller |FR1, FR2, FR3. FR4, FR5, FR6, FR7,  FR15, FR16, FR17, FR18, FR19, FR20, FR22, FR123, FR24, FR27 | … |
+|ClassProduct |  FR22, FR23, FR24, FR26, FR27|
+|ClassPayment | … | … |
+
+
+## Activity Diagram Traceability
+
+<In this case, it makes more sense (I think, feel free to disagree) to link to the file and to those requirements impacted>
+
+| Artifact ID  | Artifact Name | Requirement ID |
+| :-------------: | :----------: | :----------: |
+| AD1<Customer_Information> | Handle Customer Input | FR1-5, NFR1, NFR2, NFR7, NFR22, NFR24, NFR25 |
+| AD2<Admin_Page>| Manage Auction creation and user account | FR21, FR29, FR30, FR31, FR32, FR33, FR34, NFR11, NFR14, NFR27  |
+
+
+# Software Artifacts
+
+<This section serves as a repository for the tangible outputs of our online bidding system project. It includes hyperlinks to files containing Use Case Diagrams, Class Diagrams, and Activity Diagrams. These artifacts collectively provide an in-depth understanding of the system's structure, functionality, and dynamic processes.>
+
+* [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Activity%20Diagrams.pdf](Activity Diagrams.pdf)
+* [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Class%20Diagram.pdf](Class Diagrams.pdf)
+* [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Use%20Case%20Diagrams.pdf](Use Case Diagrams Diagrams.pdf)
 
 
 
