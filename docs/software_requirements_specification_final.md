@@ -240,9 +240,9 @@ The Online Bidding System is a web-based platform that facilitates users in plac
 
 <This section serves as a repository for the tangible outputs of our online bidding system project. It includes hyperlinks to files containing Use Case Diagrams, Class Diagrams, and Activity Diagrams. These artifacts collectively provide an in-depth understanding of the system's structure, functionality, and dynamic processes.>
 
-* [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Activity%20Diagrams.pdf](Activity Diagrams.pdf)
-* [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Class%20Diagram.pdf](Class Diagrams.pdf)
-* [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Use%20Case%20Diagrams.pdf](Use Case Diagrams Diagrams.pdf)
+* [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Activity%20Diagrams.pdf] (Activity Diagrams.pdf)
+* [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Class%20Diagram.pdf] (Class Diagrams.pdf)
+* [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Use%20Case%20Diagrams.pdf]( Use Case Diagrams Diagrams.pdf)
 
 
 
