@@ -204,7 +204,7 @@ The Online Bidding System is a web-based platform that facilitates users in plac
 
 # Traceability links
 
-<This section establishes a vital link between the various artifacts developed for the online bidding system and the specified project requirements. Through careful mapping, we ensure that every software artifact, including use case diagrams, class diagrams, and activity diagrams, is systematically connected to the relevant requirements. This traceability framework serves as a foundational element in validating the project's alignment with the defined functional and non-functional aspects. By providing a clear and comprehensive association between each artifact and its corresponding requirements, this section assures stakeholders of the thorough consideration given to every project facet, fostering transparency and accountability in the development process.>
+This section establishes a vital link between the various artifacts developed for the online bidding system and the specified project requirements. Through careful mapping, we ensure that every software artifact, including use case diagrams, class diagrams, and activity diagrams, is systematically connected to the relevant requirements. This traceability framework is a foundational element in validating the project's alignment with the defined functional and non-functional aspects. By providing a clear and comprehensive association between each artifact and its corresponding requirements, this section assures stakeholders of the thorough consideration given to every project facet, fostering transparency and accountability in the development process.
 
 ## Use Case Diagram Traceability
 
@@ -238,7 +238,7 @@ The Online Bidding System is a web-based platform that facilitates users in plac
 
 # Software Artifacts
 
-<This section serves as a repository for the tangible outputs of our online bidding system project. It includes hyperlinks to files containing Use Case Diagrams, Class Diagrams, and Activity Diagrams. These artifacts collectively provide an in-depth understanding of the system's structure, functionality, and dynamic processes.>
+This section serves as a repository for the tangible outputs of our online bidding system project. It provides hyperlinks to key artifacts developed. These artifacts collectively provide an in-depth understanding of the system's structure, functionality, and dynamic processes.
 
 * [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Activity%20Diagrams.pdf] (Activity Diagrams.pdf)
 * [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Class%20Diagram.pdf] (Class Diagrams.pdf)
@@ -246,6 +246,13 @@ The Online Bidding System is a web-based platform that facilitates users in plac
 *[https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Object%20Diagram.pdf] (Object Diagram.pdf
 * [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/CRC%20Card.pdf] (CRC Card.pdf)
 * [https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/ProjTech%20Logo.jpg] (ProjTech Logo.pdf
+
+* [Activity Diagrams.pdf](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Activity%20Diagrams.pdf)
+* [Class Diagrams.pdf](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Class%20Diagram.pdf)
+* [Use Case Diagrams.pdf](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Use%20Case%20Diagrams.pdf)
+* [Object Diagram.pdf](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Object%20Diagram.pdf)
+* [CRC Card.pdf](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/CRC%20Card.pdf)
+* [ProjTech Logo.pdf](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/ProjTech%20Logo.jpg)
 
 
 
