@@ -220,10 +220,16 @@ This section establishes a vital link between the various artifacts developed fo
 | Artifact Name | Requirement ID |
 | :-------------: |:----------: |
 | classAdmin|FR21, FR29, FR30, FR31, FR32, FR33, FR34|
-|ClassBuyer | FR1, FR2, FR3, FR4, FR6, FR33, |
-|ClassSeller |FR1, FR2, FR3. FR4, FR5, FR6, FR7,  FR15, FR16, FR17, FR18, FR19, FR20, FR22, FR123, FR24, FR27 | … |
+|ClassUser | FR1, FR2, FR3. FR4, FR5, FR6, FR7,  FR15, FR16, FR17, FR18, FR19, FR20, FR22, FR123, FR24, FR27, FR33 |
+|ClassCategory | | … |
 |ClassProduct |  FR22, FR23, FR24, FR26, FR27|
-|ClassPayment | … | … |
+|ClassProductDetails | … | … |
+|ClassBid | … | … |
+|ClassBidDetails | … | … |
+|ClassWishlist | … | … |
+|ClassTransaction | … | … |
+|ClassTransactionDetails | … | … |
+|ClassProductDetails | … | … |
 
 
 ## Activity Diagram Traceability
