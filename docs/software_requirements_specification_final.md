@@ -64,9 +64,6 @@ The Online Bidding System is a web-based platform that facilitates users in plac
 | FR34 | Admin shall be able to manage user accounts. |
 | FR35 | The system shall perform regular backups of critical data. |
 
-
-
-
 ## Non-Functional Requirements
 ### Performance
 
@@ -223,14 +220,9 @@ This section establishes a vital link between the various artifacts developed fo
 |ClassUser | FR1, FR2, FR3. FR4, FR5, FR6, FR7,  FR15, FR16, FR17, FR18, FR19, FR20, FR22, FR123, FR24, FR27, FR33 |
 |ClassCategory | | … |
 |ClassProduct |  FR22, FR23, FR24, FR26, FR27|
-|ClassProductDetails | … | … |
 |ClassBid | … | … |
-|ClassBidDetails | … | … |
 |ClassWishlist | … | … |
 |ClassTransaction | … | … |
-|ClassTransactionDetails | … | … |
-|ClassProductDetails | … | … |
-
 
 ## Activity Diagram Traceability
 
@@ -238,8 +230,8 @@ This section establishes a vital link between the various artifacts developed fo
 
 | Artifact ID  | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
-| AD1<Customer_Information> | Handle Customer Input | FR1-5, NFR1, NFR2, NFR7, NFR22, NFR24, NFR25 |
-| AD2<Admin_Page>| Manage Auction creation and user account | FR21, FR29, FR30, FR31, FR32, FR33, FR34, NFR11, NFR14, NFR27  |
+| AD1:Customer_Information | Handle Customer Input | FR1-5, NFR1, NFR2, NFR7, NFR22, NFR24, NFR25 |
+| AD2:Admin_Page| Manage Auction creation and user account | FR21, FR29, FR30, FR31, FR32, FR33, FR34, NFR11, NFR14, NFR27  |
 
 
 # Software Artifacts
