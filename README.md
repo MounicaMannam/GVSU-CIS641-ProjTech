@@ -23,10 +23,11 @@ The Online Bidding System project is to create a platform where community member
 2.Microsoft SQL Server Management Studio 
 ## Run Instructions
 * Install visual studio 
-* Open the project folder
-* Open the API sln file in [project name api folder]
+* Open the 641 project final folder.
+* Open the API sln file in BiddingApi 1622 folder in visual studio code.
 * Use the command "update-database --verbose" in package manager console to create database 
-* Run the program
-* Open the WebApp sln file in [project name webapp folder]
+* Run the program.
+* Open the WebApp sln file in BiddingApp 1622 folder.
+* Run the Program.
 * Users need to signup and login if they don't have account.
 
