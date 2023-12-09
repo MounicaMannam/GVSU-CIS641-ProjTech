@@ -239,12 +239,13 @@ This section establishes a vital link between the various artifacts developed fo
 This section serves as a repository for the tangible outputs of our online bidding system project. It provides hyperlinks to key artifacts developed. These artifacts collectively provide an in-depth understanding of the system's structure, functionality, and dynamic processes.
 
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Activity%20Diagrams.pdf)  - Activity Diagrams.pdf
-* [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Class%20Diagrams.pdf) - Final Update Class Diagram.pdf
-* [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Object%20Diagrams.pdf) - Final Update Object Diagram
+*[A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Class%20Diagram.pdf) - Class Diagrams.pdf
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Use%20Case%20Diagrams.pdf) - Use Case Diagrams.pdf
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Object%20Diagram.pdf) - Object Diagram.pdf
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/CRC%20Card.pdf) - CRC Card.pdf
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/ProjTech%20Logo.jpg) - ProjTech Logo.jpg
+* * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Class%20Diagrams.pdf) - Final Project Class Diagram.pdf
+* [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Object%20Diagrams.pdf) - Final Project Object Diagram
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/ER%20Diagram.pdf) - ER Diagram.pdf
 * [A link to ](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Database%20Schema.pdf) - Database Schema.pdf
 * [A link to ](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Windows%20Navigation%20Diagram%20IC.pdf) -Windows Navigation Diagram.pdf
