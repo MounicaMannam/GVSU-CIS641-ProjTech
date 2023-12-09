@@ -1,0 +1,54 @@
+﻿  <link rel="stylesheet" href="~/css/style1.css">
+  <script src="~/js/custom/SignIn.js"></script>
+
+	<section class="ftco-section" style="padding-top:0!important;">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-12 col-lg-10">
+					<div class="wrap d-md-flex">
+						<div class="img" style="background-image: url(http://localhost:27311/img/signin.jpg);">
+			      </div>
+						<div class="login-wrap p-4 p-md-5">
+			      	<div class="d-flex">
+			      		<div class="w-100">
+			      			<h3 class="mb-4">Sign In</h3>
+			      		</div>
+			      	</div>
+							<form class="signin-form" method="post">
+			      		<div class="form-group mb-3">
+			      			<label class="label" for="name">Email</label>
+			      			<input type="text" name="Email" class="form-control" placeholder="Enter Email">
+			      		</div>
+						  <p id="EmailErr" style="margin-left:5px;"></p>
+		            <div class="form-group mb-3">
+		            	<label class="label" for="password">Password</label>
+		              <input type="password" name="Password" class="form-control" placeholder="Password">
+		            </div>
+					<p id="PassErr" style="margin-left:5px;"></p>
+		            <div class="form-group">
+		            	<button type="button" class="form-control btn btn-primary rounded submit px-3" onclick="SigninValidate();">Sign In</button>
+		            </div>
+		            <div class="form-group d-md-flex">
+		            	<div class="w-50 text-left">
+			            	<label class="checkbox-wrap checkbox-primary mb-0">Remember Me
+									  <input type="checkbox" id="rememberMe" value="lsRememberMe">
+									  <span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="w-50 text-md-right">
+						<a href="#">Forgot Password</a>
+					</div>
+		            </div>
+		          </form>
+		          <p class="text-center">Not a member? <a href="http://localhost:27311/user/signup">Sign Up</a></p>
+		        </div>
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <script src="~/js/jquery.min.js"></script>
+  <script src="~/js/jquery.js"></script>
+
+

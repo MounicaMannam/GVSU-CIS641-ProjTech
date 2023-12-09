@@ -1,0 +1,80 @@
+﻿<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/css/intlTelInput.css" rel="stylesheet" />
+<script src="~/js/custom/TelFlag.js"></script>
+<link rel="stylesheet" href="~/css/style1.css">
+<link rel="stylesheet" href="~/css/custom/SignUp.css">
+<script src="~/js/custom/EditDetails.js"></script>
+<div class="container" style="max-width:1350px">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+            <div class="wrap d-md-flex">
+                <div class="login-wrap p-4 p-md-5">
+                    <div class="d-flex">
+                        <div class="w-100 text-center">
+                            <h3 class="mb-4" style="font-weight:bold;">Edit Profile</h3>
+                        </div>
+                    </div>
+                    <form class="mx-1 mx-md-4 needs-validation">
+                        <div class="d-flex flex-row align-items-center mb-4">
+                            <i class="fas fa-user fa-lg me-3 fa-fw" style="margin-right:10px; color:#1c1c1c;"></i>
+                            <input name="Name" type="text" placeholder="Name" class="form-control" style="border: 1px solid #ccd1e0;"/>
+                        </div>
+                        <p id="NameErr" style="margin-left:50px; margin-top:-10px"></p>
+
+                        <div class="d-flex flex-row align-items-center mb-4">
+                            <i class="fas fa-envelope fa-lg me-3 fa-fw" style="margin-right:10px; color:#1c1c1c;"></i>
+                            <input name="Email" type="email" placeholder="Email" class="form-control" style="border: 1px solid #ccd1e0;"/>
+                        </div>
+                        <p id="EmailErr" style="margin-left:50px; margin-top:-10px"></p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="d-flex flex-row align-items-center mb-4">
+                                    <i class="fas fa-city fa-lg me-3 fa-fw" style="margin-right:10px; color:#1c1c1c;"></i>
+                                    <input name="City" type="text" placeholder="City" class="form-control" style="border: 1px solid #ccd1e0;"/>
+                                </div>
+                                <p id="CityErr" style="margin-left:50px; margin-top:-10px"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-row align-items-center mb-4">
+                                    <i class="fas fa-landmark fa-lg me-3 fa-fw" style="margin-right:10px; color:#1c1c1c;"></i>
+                                    <input name="State" type="text" placeholder="State" class="form-control" style="border: 1px solid #ccd1e0;"/>
+                                </div>
+                                <p id="StateErr" style="margin-left:50px; margin-top:-10px"></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="d-flex flex-row align-items-center mb-4">
+                                    <i class="fas fa-map-marker-alt fa-lg me-3 fa-fw" style="margin-right:10px; color:#1c1c1c;"></i>
+                                    <input name="Zip" type="number" placeholder="Zip" class="form-control" style="border: 1px solid #ccd1e0;"/>
+                                </div>
+                                <p id="ZipErr" style="margin-left:50px; margin-top:-10px"></p>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="d-flex flex-row align-items-center mb-4">
+                                    <i class="fas fa-phone fa-lg me-3 fa-fw" style="margin-right:10px; color:#1c1c1c;"></i>
+                                    <script>$("input[name='Phone']").intlTelInput({ utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js" });</script>
+                                    <input name="Phone" id="Phone" type="number" class="form-control" style="border: 1px solid #ccd1e0;"/>
+                          
+                                </div>
+                                <p id="PhoneErr" style="margin-left:50px; margin-top:-10px"></p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                            <button type="button" class="btn btn-primary btn-lg" style="margin-top:10px!important; border-radius:0.5rem;" onclick="return addUser();" >
+                                Update
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="img" style="background-image: url(http://localhost:27311/img/bg-1.jpg);"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/jquery.min.js"></script>
+<script src="~/js/jquery.js"></script>
+<script src="~/js/popper.js"></script>

@@ -1,0 +1,100 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link href="http://localhost:27311/img/favicon.png" rel="icon">
+        <title>@ViewData["Title"]Elite - Admin</title>
+        <link href="~/css/custom/Admin.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Elite Bidding</a>
+            <h4 style="color:white;margin-left:15rem">Welcome Admin <span id="adminname"></span></h4>
+            <!-- Navbar-->
+            <button class="btn btn-primary" onclick="return logout();">Logout</button>
+        </nav>
+            <div id="layoutSidenav_content" style="margin-top:5rem;">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Auction Report</h1>
+                         <div class="row">
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card bg-warning text-white mb-4">
+                                    <div class="card-body">Product Report</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="http://localhost:27311/Admin/">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card bg-success text-white mb-4">
+                                    <div class="card-body">Aution Report</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="http://localhost:27311/Admin/Auction">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card bg-danger text-white mb-4">
+                                    <div class="card-body">Payment Report</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="http://localhost:27311/Admin/Payment">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Products Table
+                            </div>
+                            <div class="card-body">
+                                <table class="table-bordered" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Seller Name</th>
+                                            <th>Name</th>
+                                            <th>Image</th>
+                                            <th>Start Price</th>
+                                            <th>Highest Bid</th>
+                                            <th>End Date</th>
+                                            <th>Status</th>
+                                            <th>Buyer Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="auctionloaddata">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">&copy; Elite Bidding</div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        
+        <script src="~/js/jquery.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+       <script src="~/js/custom/AdminPage.js"></script>
+       </body>
+</html>

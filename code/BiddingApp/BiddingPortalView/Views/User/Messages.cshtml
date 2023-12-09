@@ -1,0 +1,53 @@
+﻿<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="~/js/jquery.js"></script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body bg-primary text-white mailbox-widget pb-0">
+                    <h2 class="text-white pb-3">Your Messages</h2>
+                </div>
+                <div class="row p-4 no-gutters align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <ul class="list-inline dl mb-0 float-left float-md-right">
+                            <li class="list-inline-item text-info mr-3">
+                                    <button class="btn btn-circle btn-success text-white" onclick="return unreadmsgdisplay();">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </button>
+                                    <span class="ml-2 font-normal text-dark">UnRead</span>
+                            </li>
+                            <li class="list-inline-item text-danger">
+                                    <button class="btn btn-circle btn-danger text-white" onclick="return readmsgdisplay();">
+                                        <i class="fa-solid fa-envelope-open"></i>
+                                    </button>
+                                    <span class="ml-2 font-normal text-dark">Read</span>
+                            </li>
+                              <li class="list-inline-item text-danger" id="deletemsgs">
+                                    <button class="btn btn-circle btn-danger text-white" onclick="return deletemessages();">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                    <span class="ml-2 font-normal text-dark">Delete</span>
+                            </li>
+                             <li class="list-inline-item text-danger" style="text-align:right" id="selectallmsgs">
+                                    <button class="btn btn-circle btn-danger text-white" onclick="return selectallmessages();">
+                                        <i class="fa-solid fa-check-double"></i>
+                                    </button>
+                                    <span class="ml-2 font-normal text-dark">Mark All Read</span>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+                <!-- Mail list-->
+                <div class="table-responsive">
+                    <table class="table email-table no-wrap table-hover v-middle mb-0 font-14">
+                        <tbody id="unread"> 
+                        </tbody>
+                         <tbody id="read"> 
+                         </tbody>                            
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/js/custom/Messages.js"></script>

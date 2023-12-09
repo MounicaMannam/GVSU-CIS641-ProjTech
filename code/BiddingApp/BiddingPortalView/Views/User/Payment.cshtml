@@ -1,0 +1,246 @@
+﻿<script src="~/js/jquery.min.js"></script>
+<script src="~/js/jquery.js"></script>
+<link href="~/css/custom/Payment.css" />
+<script src="~/js/custom/Payment.js"></script>
+<div class="container py-5" style="padding-top:0!important;">
+    <div class="row mb-4">
+        <div class="col-lg-8 mx-auto text-center">
+            <h1 class="display-6">Product Payment Payment</h1>
+        </div>
+    </div> <!-- End -->
+
+    <div class="row">
+        <div class="col-lg-6 mx-auto">
+            <div class="card ">
+                <div class="card-header">
+                    <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+
+                        <!-- Credit card form tabs -->
+                        <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                            <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link active"> <i
+                                        class="fa-solid fa-at"></i> PayPal </a> </li>
+                            <li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link  "> <i
+                                        class="fas fa-credit-card mr-2"></i> Card </a> </li>
+                            
+                            <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i
+                                        class="fas fa-mobile-alt mr-2"></i> Net Banking </a> </li>
+                        </ul>
+                    </div> <!-- End -->
+
+                    <!-- Card form content -->
+                    <br>
+                    <div class="tab-content">
+                        <!-- card info-->
+                        <div id="upi-payment" class="tab-pane fade show active pt-3">
+                            <div class="form-group">
+                                <h6>Enter your UPI ID</h6>
+                                <input type="text" id="upiId" name="upi" placeholder="Enter UPI" required
+                                    class="form-control ">
+                            </div>
+                            <p id="UpiErr" style="margin-left:15px; margin-top:-10px"></p>
+                            <div class="form-group">
+                                <p><button type="button" id="upiverifybtn" class="btn btn-primary"
+                                        onclick="return UPIValidate();"><i class="fa-solid fa-at"></i>
+                                        Verify</button></p>
+                                <p><button type="button" id="upipaybtn" class="btn btn-primary"
+                                        onclick="return upipayment();"><i class="fa fa-inr" aria-hidden="true"></i>
+                                        Pay Now</button></p>
+                            </div>
+                            @*<p class="text-muted">Note: After clicking on the button, you will be directed to a secure
+                                gateway for payment. After completing the payment process, you will be redirected back
+                                to
+                                the website to view details of your order. </p>*@
+                        </div> <!-- End -->
+                        
+                        <div id="credit-card" class="tab-pane fade pt-3">
+
+                            <div class="form-group"> <label for="name">
+                                    <h6>Card Holder</h6>
+                                </label> <input type="text" id="cardholdername" name="username"
+                                    placeholder="Card Holder Name" required class="form-control "> </div>
+                            <p id="CHNameErr" style="margin-left:15px; margin-top:-10px"></p>
+                            <div class="form-group"> <label for="cardNumber">
+                                    <h6>Card Number</h6>
+                                </label>
+                                <div class="input-group">
+                                    <input id="cardnumber"
+                                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                        type="tel" maxlength="19" placeholder="XXXX XXXX XXXX XXXX"
+                                        class="form-control " required>
+                                    <div class="input-group-append"> <span id="cardtype"
+                                            class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i
+                                                class="fab fa-cc-mastercard mx-1"></i> <i
+                                                class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                </div>
+                            </div>
+                            <p id="CardNumErr" style="margin-left:15px; margin-top:-10px"></p>
+                            <div class="row">
+                                <div class="col-sm-4" style="padding-right: 0px;">
+                                    <div class="form-group "> <label><span class="hidden-xs">
+                                                <h6>Expiration Date</h6>
+                                            </span></label>
+                                        <div class="input-group">
+                                            <select class="form-control" id="cardmm">
+                                                <option value="0" selected disabled>Month</option>
+                                                <option value="01">January (01)</option>
+                                                <option value="02">February (02)</option>
+                                                <option value="03">March (03)</option>
+                                                <option value="04">April (04)</option>
+                                                <option value="05">May (05)</option>
+                                                <option value="06">June (06)</option>
+                                                <option value="07">July (07)</option>
+                                                <option value="08">August (08)</option>
+                                                <option value="09">September (09)</option>
+                                                <option value="10">October (10)</option>
+                                                <option value="11">November (11)</option>
+                                                <option value="12">December (12)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group "> <label><span class="hidden-xs">
+                                                <h6></h6>
+                                            </span></label>
+                                        <div class="input-group">
+                                            <select class="form-control" id="cardyy" style="margin-top: 14px;">
+                                                <option value="0" selected disabled>Year</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2023">2025</option>
+                                                <option value="2024">2026</option>
+                                                <option value="2023">2027</option>
+                                                <option value="2024">2028</option>
+                                                <option value="2023">2029</option>
+                                                <option value="2024">2030</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group mb-4"> <label data-toggle="tooltip"
+                                            style="border-radius:5px;"
+                                            title="Three digit CVV code on the back of your card">
+                                            <h6>CVV<i class="fa fa-question-circle d-inline"></i></h6>
+                                        </label>
+                                        <input
+                                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                            type="number" maxlength="3" id="cardcvv" placeholder="CVV"
+                                            class="form-control" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 grid sm:grid-cols-4">
+                                    <p id="CardMMErr" style="margin-left:15px; margin-top:-10px"></p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p id="CardYYErr" style="margin-left:15px; margin-top:-10px"></p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p id="CardCVVErr" style="margin-left:15px; margin-top:-10px"></p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-primary btn-block shadow-sm"
+                                    onclick="return CardValidate();"> Confirm Payment </button>
+                            </div>
+
+                        </div><!-- End -->
+
+                        <!-- upi info -->
+                        
+
+                        <!-- bank transfer info -->
+                        <div id="net-banking" class="tab-pane fade pt-3">
+                            <div class="form-group ">
+                                <h6>Select your Bank</h6>
+                                <select class="form-control" id="bank">
+                                    <option value="0" selected disabled>Please select your Bank</option>
+                                    <option>HDFC Bank</option>
+                                    <option>State Bank of India (SBI)</option>
+                                    <option>ICICI Bank</option>
+                                    <option>Kotak Mahindra Bank</option>
+                                    <option>Axis Bank</option>
+                                    <option>IndusInd Bank</option>
+                                    <option>Bank of Baroda (BOB)</option>
+                                    <option>Punjab National Bank (PNB)</option>
+                                    <option>Yes Bank</option>
+                                    <option>Bank of India (BOI)</option>
+                                </select>
+                            </div>
+                             <p id="BankErr" style="margin-left:15px; margin-top:-10px"></p>
+                            <div class="form-group">
+                                <p> <button type="button" class="btn btn-primary" onclick="    return NetbankingValidate();"><i
+                                            class="fas fa-mobile-alt mr-2"></i>
+                                        Proceed</button> </p>
+                            </div>
+                            <p class="text-muted">Note: After clicking on the button, you will be directed to a secure
+                                gateway for payment. After completing the payment process, you will be redirected back
+                                to
+                                the website to view details of your order. </p>
+                        </div> <!-- End -->
+                        <!-- End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal-->
+<div class="modal fade" id="netbankingmodal" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true"
+    aria-labelledby="MyModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content" style="border-radius:0.5rem;">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Bank Gateway</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group" id="bankname">
+                    </div>
+                    <div class="form-group">
+                        <label for="GenreName">User Name</label>
+                        <input type="text" class="form-control" id="Username" placeholder="User Name"
+                            style="border: 1px solid #ccd1e0;" required />
+                    </div>
+                    <p id="NBNameErr" style="margin-left:15px; margin-top:-10px"></p>
+                    <div class="form-group">
+                        <label for="GenreName">Pass Code</label>
+                        <input type="text" class="form-control" id="Passcode" placeholder="Pass Code"
+                            style="border: 1px solid #ccd1e0;" required />
+                    </div>
+                    <p id="NBPassErr" style="margin-left:15px; margin-top:-10px"></p>
+                </form>
+            </div>
+
+            <!-- Modal Footer-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnAdd"
+                    onclick="return SelBankValidate();">Proceed</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" style="color:#DC143C;">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#cardnumber').on('keyup', function (e) {
+        var val = $(this).val();
+        if (val.length < 19) {
+            if (val.replace(/\s/g, '').length % 4 == 0) {
+                $(this).val(val + ' ');
+            }
+        }
+        else {
+            $(this).val(val);
+        }
+    })	
+</script>

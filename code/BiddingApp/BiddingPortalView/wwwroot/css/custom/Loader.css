@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#resultLoading{
+    background-color: #18181f;
+}
+
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(300px,1fr)
+    );
+    grid-gap: 30px;
+}
+#loadImg{
+    width: 100%;
+}
+
