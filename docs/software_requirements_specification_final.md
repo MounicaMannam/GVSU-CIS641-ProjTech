@@ -1,7 +1,7 @@
 # Overview
-An online bidding system is a digital platform that facilitates the process of buying and selling goods or services through a competitive auction format conducted over the internet. This system allows users to place bids on items or projects, with the highest bidder winning the opportunity to purchase or secure the service. Typically employed in various industries, such as e-commerce, freelance services, and procurement, online bidding systems streamline the transaction process, increase market efficiency, and foster a competitive environment. Participants can engage in real-time bidding, monitor auction progress, and adjust their bids accordingly, promoting transparency and fair competition. The system often incorporates secure payment mechanisms and comprehensive tracking features, ensuring a reliable and accountable online marketplace for both buyers and sellers.
+An online bidding system is a digital platform that facilitates buying and selling goods or services through a competitive auction format conducted over the Internet. This system allows users to place bids on items or projects, with the highest bidder winning the opportunity to purchase or secure the service. Typically employed in various industries, such as e-commerce, freelance services, and procurement, online bidding systems streamline the transaction process, increase market efficiency, and foster a competitive environment. Participants can engage in real-time bidding, monitor auction progress, and adjust their bids accordingly, promoting transparency and fair competition. The system often incorporates secure payment mechanisms and comprehensive tracking features, ensuring a reliable and accountable online marketplace for both buyers and sellers.
 # Software Requirements
-The Software Requirements section is structured to encompass both functional and non-functional aspects of the Online Bidding System. Functional requirements outline the specific features and capabilities the system must possess, such as user registration, bid placement, and auction management. Non-functional requirements cover performance, security, usability, and other quality attributes. Each requirement is presented with a unique identifier, a detailed description, and acceptance criteria. Additionally, dependencies between requirements are highlighted to provide a holistic view of the system's behavior. This section serves as a detailed roadmap for the development team, guiding the implementation of the Online Bidding System in accordance with the identified specifications.
+The Software Requirements section is structured to encompass both functional and non-functional aspects of the Online Bidding System. Functional requirements outline the specific features and capabilities the system must possess, such as user registration, bid placement, and auction management. Non-functional requirements cover performance, security, usability, and other quality attributes. Each requirement is presented with a unique identifier, a detailed description, and acceptance criteria. Additionally, dependencies between requirements are highlighted to provide a holistic view of the system's behavior. This section serves as a detailed roadmap for the development team, guiding the implementation of the Online Bidding System by the identified specifications.
 
 ## Functional Requirements
 
@@ -13,9 +13,9 @@ The Software Requirements section is structured to encompass both functional and
 | FR2 | Users shall be able to log in using their registered email and password. |
 | FR3 | Users shall have the option to recover their password through a secure process. |
 | FR4 | Users shall be able to update their profile information after logging in. |
-| FR5 | The system shall show Sign-Up link on Sign-In page and vice-versa. |
+| FR5 | The system shall show the Sign-Up link on the Sign-In page and vice-versa. |
 | FR6 | Users shall have the option to save their account information if needed. |
-| FR7 | Users shall be able to view the agreement statements before signup. |
+| FR7 | Users shall be able to view the agreement statements before signing up. |
 
 ### Bidding Management
 
@@ -23,109 +23,58 @@ The Software Requirements section is structured to encompass both functional and
 | :-------------: | :----------: |
 | FR8 | Users shall be able to place bids on products they are interested in. |
 | FR9 | Users shall be able to view their bid history, including active and past bids. |
-| FR10 | The system shall automatically increment the bidding price by 15% for each bid. |
+| FR10 | The system shall automatically increment the bidding price by 15% for each bid. 
 | FR11 | Users shall be able to update their bid amounts. |
 | FR12 | Users shall be able to add products to their wishlist for future bidding. |
-| FR13 | Users shall have the option to delete their bids. |
-| FR14 | The system shall display the top five bidders for a selected product. |
+| FR13| Users shall be able to remove products from their wishlist. |
+| FR14| Users shall be able to see the list of products in their wishlist. |
+| FR15 | Users shall have the option to delete their bids. |
+| FR16 | The system shall display the top five bidders for a selected product. |
 
 ### Product Management
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR15 | Users shall be able to add new products with details such as name, description, and images. |
-| FR16 | Users shall be able to update product details. |
-| FR17 | Users shall be able to delete products they no longer wish to auction. |
-| FR18 | Users shall assign a category to each product. |
-| FR19 | Users shall be able to view a list of all their products. |
-| FR20 | Users shall be able to upload images for each product. |
-| FR21 | Admin shall be able to view and manage similar products for analysis. |
+| FR17 | Users shall be able to add new products with details such as name, description, and images. |
+| FR18 | Users shall be able to update product details. |
+| FR19 | Users shall be able to delete products they no longer wish to auction. |
+| FR20 | Users shall assign a category to each product. |
+| FR21 | Users shall be able to view a list of all their products. |
+| FR22 | Users shall be able to upload images for each product. |
+| FR23 | Admin shall be able to view and manage similar products for analysis. |
 
 ### Product Images Management
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR22 | Users shall be able to upload images for each product during the product addition process. |
-| FR23 | Users shall have the option to delete images associated with a product. |
-| FR24 | Users shall be able to view the images associated with a particular product. |
-| FR25 | The system shall support the upload of multiple images for a single product. |
-| FR26 | Thumbnails of uploaded images shall be automatically generated for product listings. |
-| FR27 | Users shall be able to view all images in a gallery format for a particular product. |
-| FR28 | The system shall validate that uploaded images maintain a consistent aspect ratio for display uniformity. |
+| FR24 | Users shall be able to upload images for each product during the product addition process. |
+| FR25 | Users shall have the option to delete images associated with a product. |
+| FR26 | Users shall be able to view the images associated with a particular product. |
+| FR27 | The system shall support the upload of multiple images for a single product. |
+| FR28 | Thumbnails of uploaded images shall be automatically generated for product listings. |
+| FR29 | Users shall be able to view all images in a gallery format for a particular product. |
+| FR30 | The system shall validate that uploaded images maintain a consistent aspect ratio for display uniformity. |
 
 ### Reporting and Admin Tools
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR29 | Admin shall be able to generate reports on auction outcomes. |
-| FR30 | Admin shall be able to view reports on user activity. |
-| FR31 | Admin shall be able to generate reports on product trends. |
-| FR32 | Admin shall be able to view reports on user transactions. |
-| FR33 | Admin shall be able to add, update, or delete product categories. |
-| FR34 | Admin shall be able to manage user accounts. |
-| FR35 | The system shall perform regular backups of critical data. |
+| FR31 | Admin shall be able to generate reports on auction outcomes. |
+| FR32 | Admin shall be able to view reports on user activity. |
+| FR33 | Admin shall be able to generate reports on product trends. |
+| FR34 | Admin shall be able to view reports on user transactions. |
+| FR35 | Admin shall be able to add, update, or delete product categories. |
+| FR36 | Admin shall be able to manage user accounts. |
+| FR37 | The system shall perform regular backups of critical data. |
 
-### User Class
+### Transaction Management
 | ID  | Requirement                                              |
 | :--:| :------------------------------------------------------- |
-| FR36| Users shall register accounts by providing necessary information. |
-| FR37| The system shall be able to authenticate users during login using valid credentials. |
-| FR38| Users shall be able to update their profiles, including contact information. |
-| FR39| Users shall have the ability to reset their passwords. |
-
-### Category Class
-| ID  | Requirement                                              |
-| :--:| :------------------------------------------------------- |
-| FR40| Admins shall be able to create and manage product categories. |
-| FR41| Products shall be assignable to one or more categories. |
-| FR42| Users shall be able to browse products by category. |
-
-### Product Class
-| ID  | Requirement                                              |
-| :--:| :------------------------------------------------------- |
-| FR43| Users shall be able to add new products with details such as name, description, and images. |
-| FR44| Users shall be able to modify product information. |
-| FR45| Users shall be able to remove products from the system. |
-
-### ProductDetails Class
-| ID  | Requirement                                              |
-| :--:| :------------------------------------------------------- |
-| FR46| The system shall support the addition and deletion of product images. |
-
-### Bid Class
-| ID  | Requirement                                              |
-| :--:| :------------------------------------------------------- |
-| FR47| Users shall be able to place bids on products. |
-| FR48| Users shall be able to modify their bids. |
-| FR49| The system shall automatically close bids at the specified time. |
-
-### BidDetails Class
-| ID  | Requirement                                              |
-| :--:| :------------------------------------------------------- |
-| FR50| Users shall be able to view bid details, including status and time remaining. |
-| FR51| Display any special conditions attached to a bid. |
-
-### Wishlist Class
-| ID  | Requirement                                              |
-| :--:| :------------------------------------------------------- |
-| FR52| Users shall be able to add products to their wishlist. |
-| FR53| Users shall be able to remove products from their wishlist. |
-| FR54| Users shall be able to see the list of products in their wishlist. |
-
-### Transaction Class
-| ID  | Requirement                                              |
-| :--:| :------------------------------------------------------- |
-| FR55| When a bid is won, the system shall record the transaction details. |
-| FR56| The system shall track the transaction amount and update user balances. |
-
-### TransactionDetails Class
-| ID  | Requirement                                              |
-| :--:| :------------------------------------------------------- |
-| FR57| Users shall be able to view detailed transaction information. |
-| FR58| The system shall display the payment method used for the transaction. |
-| FR59| The system shall display relevant shipping information. |
-
-
+| FR38| When a bid is won, the system shall record the transaction details. |
+| FR39| The system shall track the transaction amount and update user balances. |
+| FR40| Users shall be able to view detailed transaction information. |
+| FR41| The system shall display the payment method used for the transaction. |
+| FR42| The system shall display relevant shipping information. |
 
 ## Non-Functional Requirements
 ### Performance
@@ -270,29 +219,28 @@ This section establishes a vital link between the various artifacts developed fo
 
 | Artifact ID  | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
-| UseCase1 | Buyer | FR1-9, FR11-13, FR24, FR27, NFR25|
-| UseCase2| Seller | FR1-7,  FR15-20, FR22-24, FR27, NFR25 |
-| UseCase3| Admin | FR21, FR29-34 |
-
+| UseCase1 | Buyer | FR1-9, FR11-15, FR26, FR29, NFR25|
+| UseCase2| Seller | FR1-7,  FR17-22, FR24-26, FR29, NFR25 |
+| UseCase3| Admin | FR23, FR31-37 |
 
 ## Class Diagram Traceability
 
 | Artifact Name | Requirement ID |
 | :-------------: |:----------: |
-| classAdmin|FR21, FR29, FR30, FR31, FR32, FR33, FR34|
-|ClassUser | FR1-7, FR15-20, FR22-24, FR27, FR33 |
+| classAdmin|FR23, FR31-37|
+|ClassUser | FR1-9, FR11-15, FR17-22, FR24-26, FR29, FR33, NFR25 |
 |ClassCategory |FR18 |
 |ClassProduct |  FR15-17,FR19-24, FR26-27|
-|ClassBid | FR8-11, FR13, FR14| 
-|ClassWishlist | FR12 | 
-|ClassTransaction | TBD|
+|ClassBid | FR8-11, FR15-16,| 
+|ClassWishlist | FR12-14 | 
+|ClassTransaction |FR38-42|
 
 ## Activity Diagram Traceability
 
 | Artifact ID  | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
 | AD1:Customer_Information | Handle Customer Input | FR1-7, NFR1, NFR2, NFR7, NFR22, NFR24, NFR25 |
-| AD2:Admin_Page| Manage Auction creation and user account | FR21, FR29-34, NFR11, NFR14, NFR27  |
+| AD2:Admin_Page| Manage Auction creation and user account | FR23, FR31-37, NFR11, NFR14, NFR27  |
 
 # Software Artifacts
 
