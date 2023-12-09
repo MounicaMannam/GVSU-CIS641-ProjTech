@@ -22,11 +22,11 @@ The Online Bidding System project is to create a platform where community member
    * After the previous step, the Visual Studio Code window opens successfully. Now you can create a new file in the Visual Studio Code window and choose a language of yours to begin your programming journey!
 2.Microsoft SQL Server Management Studio 
 ## Run Instructions
--Install visual studio 
--Open the project folder
--Open the API sln file in [project name api folder]
--Use the command "update-database --verbose" in package manager console to create database 
--Run the program
--Open the WebApp sln file in [project name webapp folder]
--Users need to signup and login if they don't have account.
+* Install visual studio 
+* Open the project folder
+* Open the API sln file in [project name api folder]
+* Use the command "update-database --verbose" in package manager console to create database 
+* Run the program
+* Open the WebApp sln file in [project name webapp folder]
+* Users need to signup and login if they don't have account.
 
