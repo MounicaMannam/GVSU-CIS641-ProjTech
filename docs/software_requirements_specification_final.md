@@ -219,29 +219,28 @@ This section establishes a vital link between the various artifacts developed fo
 
 | Artifact ID  | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
-| UseCase1 | Buyer | FR1-9, FR11-13, FR24, FR27, NFR25|
-| UseCase2| Seller | FR1-7,  FR15-20, FR22-24, FR27, NFR25 |
-| UseCase3| Admin | FR21, FR29-34 |
-
+| UseCase1 | Buyer | FR1-9, FR11-15, FR26, FR29, NFR25|
+| UseCase2| Seller | FR1-7,  FR17-22, FR24-26, FR29, NFR25 |
+| UseCase3| Admin | FR23, FR31-37 |
 
 ## Class Diagram Traceability
 
 | Artifact Name | Requirement ID |
 | :-------------: |:----------: |
-| classAdmin|FR21, FR29, FR30, FR31, FR32, FR33, FR34|
-|ClassUser | FR1-7, FR15-20, FR22-24, FR27, FR33 |
+| classAdmin|FR23, FR31-37|
+|ClassUser | FR1-9, FR11-15, FR17-22, FR24-26, FR29, FR33, NFR25 |
 |ClassCategory |FR18 |
 |ClassProduct |  FR15-17,FR19-24, FR26-27|
-|ClassBid | FR8-11, FR13, FR14| 
-|ClassWishlist | FR12 | 
-|ClassTransaction | TBD|
+|ClassBid | FR8-11, FR15-16,| 
+|ClassWishlist | FR12-14 | 
+|ClassTransaction |FR38-42|
 
 ## Activity Diagram Traceability
 
 | Artifact ID  | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
 | AD1:Customer_Information | Handle Customer Input | FR1-7, NFR1, NFR2, NFR7, NFR22, NFR24, NFR25 |
-| AD2:Admin_Page| Manage Auction creation and user account | FR21, FR29-34, NFR11, NFR14, NFR27  |
+| AD2:Admin_Page| Manage Auction creation and user account | FR23, FR31-37, NFR11, NFR14, NFR27  |
 
 # Software Artifacts
 
