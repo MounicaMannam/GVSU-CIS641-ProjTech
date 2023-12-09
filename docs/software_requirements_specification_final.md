@@ -241,7 +241,7 @@ This section serves as a repository for the tangible outputs of our online biddi
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Object%20Diagram.pdf) - Object Diagram.pdf
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/CRC%20Card.pdf) - CRC Card.pdf
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/ProjTech%20Logo.jpg) - ProjTech Logo.jpg
-* * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Class%20Diagrams.pdf) - Final Project Class Diagram.pdf
+* [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Class%20Diagrams.pdf) - Final Project Class Diagram.pdf
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Object%20Diagrams.pdf) - Final Project Object Diagram
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/ER%20Diagram.pdf) - ER Diagram.pdf
 * [A link to ](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Database%20Schema.pdf) - Database Schema.pdf
