@@ -218,9 +218,9 @@ This section establishes a vital link between the various artifacts developed fo
 | :-------------: |:----------: |
 | classAdmin|FR21, FR29, FR30, FR31, FR32, FR33, FR34|
 |ClassUser | FR1, FR2, FR3. FR4, FR5, FR6, FR7,  FR15, FR16, FR17, FR18, FR19, FR20, FR22, FR123, FR24, FR27, FR33 |
-|ClassCategory |FR18,  | … |
+|ClassCategory |FR18 | … |
 |ClassProduct |  FR15, FR16, FR17,FR19, FR20, FR21, FR22, FR23, FR24, FR26, FR27|
-|ClassBid | FR8, FR9, FR10, FR11, FR13, FR14,| 
+|ClassBid | FR8, FR9, FR10, FR11, FR13, FR14| 
 |ClassWishlist | FR12 | 
 |ClassTransaction | TBD|
 
@@ -236,7 +236,7 @@ This section establishes a vital link between the various artifacts developed fo
 This section serves as a repository for the tangible outputs of our online bidding system project. It provides hyperlinks to key artifacts developed. These artifacts collectively provide an in-depth understanding of the system's structure, functionality, and dynamic processes.
 
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Activity%20Diagrams.pdf)  - Activity Diagrams.pdf
-*[A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Class%20Diagram.pdf) - Class Diagrams.pdf
+* [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Class%20Diagram.pdf) - Class Diagrams.pdf
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Use%20Case%20Diagrams.pdf) - Use Case Diagrams.pdf
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Object%20Diagram.pdf) - Object Diagram.pdf
 * [A link to](https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/CRC%20Card.pdf) - CRC Card.pdf
