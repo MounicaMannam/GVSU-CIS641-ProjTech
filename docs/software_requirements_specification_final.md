@@ -220,24 +220,18 @@ This section establishes a vital link between the various artifacts developed fo
 
 | Artifact ID | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
-| AdminViewDetails | View Details for both Buyer and Seller | FR32 |
-| AdminViewProductDetails | View Product Details | FR23 |
-| AdminCheckBiddingDetails | Check Bidding Details | FR31 |
-
-| Artifact ID | Artifact Name | Requirement ID |
-| :-------------: | :----------: | :----------: |
-| BuyerBrowseCatalog | Browse Catalog to look for item | FR8 |
-| BuyerCreateAuction | Create Auction by Uploading Item | FR17 |
-| BuyerSetPrice | Set Price for Items | FR8, FR10 |
-| BuyerSellItem | Sell Item | FR38 |
-| BuyerCheckBidStatus | Check Bid Status | FR9 |
-
-| Artifact ID | Artifact Name | Requirement ID |
-| :-------------: | :----------: | :----------: |
-| SellerBrowseCatalog | Browse Catalog to look for item | FR21 |
-| SellerBidForProduct | Bid for Product | FR8 |
-| SellerCheckBidStatus | Check Bid Status | FR9 |
-| SellerAuctionEnds | Auction Ends (Winner Declared) | FR38 |
+| UseCase1 | View Details for both Buyer and Seller | FR32 |
+| UseCase2 | View Product Details | FR23 |
+| UseCase3 | Check Bidding Details | FR31 |
+| UseCase4 | Browse Catalog to look for item | FR8 |
+| UseCase5 | Create Auction by Uploading Item | FR17 |
+| UseCase6 | Set Price for Items | FR8, FR10 |
+| UseCase7 | Sell Item | FR38 |
+| UseCase8 | Check Bid Status | FR9 |
+| UseCase9 | Browse Catalog to look for item | FR21 |
+| UseCase10 | Bid for Product | FR8 |
+| UseCase11 | Check Bid Status | FR9 |
+| UseCase12 | Auction Ends (Winner Declared) | FR38 |
 
 
 ## Class Diagram Traceability
