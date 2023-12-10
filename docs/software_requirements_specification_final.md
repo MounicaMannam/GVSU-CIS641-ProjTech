@@ -215,7 +215,6 @@ The Software Requirements section is structured to encompass both functional and
 
 This section establishes a vital link between the various artifacts developed for the online bidding system and the specified project requirements. Through careful mapping, we ensure that every software artifact, including use case diagrams, class diagrams, and activity diagrams, is systematically connected to the relevant requirements. This traceability framework is a foundational element in validating the project's alignment with the defined functional and non-functional aspects. By providing a clear and comprehensive association between each artifact and its corresponding requirements, this section assures stakeholders of the thorough consideration given to every project facet, fostering transparency and accountability in the development process.
 
-## Use Case Diagram Traceability
 
 ## Use Case Diagram Traceability
 
