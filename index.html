@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <title>ProjTech - Online Bidding System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +12,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <style>
+        /* Your existing CSS styles here */
+
         /* Gradient background */
         body {
             background: linear-gradient(to bottom, #87CEEB, #f9e0b0); /* Gradient from light blue to light sandy tone */
@@ -22,12 +25,12 @@
             background-color: #ff7f50; /* Coral header background for contrast */
         }
 
-        /* Title with a contrasting color */
+        /* Title with contrasting color */
         h1, h2 {
             color: #ff7f50; /* Coral titles for contrast */
         }
 
-        /* Links with a contrasting color */
+        /* Links with contrasting color */
         a {
             color: #4b0082; /* Indigo links for better visibility */
         }
@@ -48,8 +51,34 @@
             height: auto; /* Maintain the image's aspect ratio */
             object-fit: cover; /* Crop the image if necessary to fit within the container */
         }
+
+        /* New styles for horizontal arrangement */
+        .horizontal-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .horizontal-section h2 {
+            flex-basis: 100%;
+            margin-top: 20px;
+        }
+
+        .horizontal-section .section-container {
+            flex-basis: 48%; /* Adjust the width as needed */
+        }
+
+        .section-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section-container h2 {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container mt-4">
         <header>
@@ -76,40 +105,59 @@
             </div>
         </div>
 
-        <section class="mt-4">
-            <h2>Project Artifacts</h2>
-                <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/System%20Request.pdf" target="_blank">System Request</a></li>
-                <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Use%20Case%20Diagrams.pdf" target="_blank">Use Case Diagrams</a></li>
-                <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Activity%20Diagrams.pdf" target="_blank">Activity Diagrams</a></li>
-                <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/CRC%20Card.pdf" target="_blank">CRC Card</a></li>
-                <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Class%20Diagram.pdf" target="_blank">Class Diagram</a></li>
-                <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Object%20Diagram.pdf" target="_blank">Object Diagram</a></li>
-                <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Class%20Diagrams.pdf" target="_blank">Final Project Class Diagram </a></li>
-                <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Object%20Diagrams.pdf" target="_blank">Final Project Object Diagram </a></li>
-                <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/ER%20Diagram.pdf" target="_blank">ER Diagram </a></li>
-                <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Database%20Schema.pdf" target="_blank">Database Schema</a></li>
-                <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Windows%20Navigation%20Diagram%20IC.pdf" target="_blank">Windows Navigation Diagram</a></li>
-           </ul>
-        </section>
+        <div class="horizontal-section">
+            <div class="section-container">
+                <h2>Project Artifacts</h2>
+                <ul>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/System%20Request.pdf" target="_blank">System Request</a></li>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Use%20Case%20Diagrams.pdf" target="_blank">Use Case Diagrams</a></li>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Activity%20Diagrams.pdf" target="_blank">Activity Diagrams</a></li>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/CRC%20Card.pdf" target="_blank">CRC Card</a></li>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Class%20Diagram.pdf" target="_blank">Class Diagram</a></li>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Object%20Diagram.pdf" target="_blank">Object Diagram</a></li>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Class%20Diagrams.pdf" target="_blank">Final Project Class Diagram </a></li>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Object%20Diagrams.pdf" target="_blank">Final Project Object Diagram </a></li>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/ER%20Diagram.pdf" target="_blank">ER Diagram </a></li>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Database%20Schema.pdf" target="_blank">Database Schema</a></li>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Windows%20Navigation%20Diagram%20IC.pdf" target="_blank">Windows Navigation Diagram</a></li>
+                </ul>
+            </div>
 
-        <section class="mt-4">
-            <h2>Project Documents</h2>
-            <ul>
-                <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/docs/proposal-template.md" target="_blank">System Proposal</a></li>
-                <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/docs/software_requirements_specification.md" target="_blank">Software Requirement Specifications</a></li>
-               <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/docs/software_requirements_specification_final.md" target="_blank">Final Software Requirement Specifications</a></li>
-                <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/tree/main/code" target="_blank">Online Bidding System Source Code</a></li>
-            </ul>
+            <div class="section-container">
+                <h2>Project Documents</h2>
+                <ul>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/docs/proposal-template.md" target="_blank">System Proposal</a></li>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/docs/software_requirements_specification.md" target="_blank">Software Requirement Specifications</a></li>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/docs/software_requirements_specification_final.md" target="_blank">Final Software Requirement Specifications</a></li>
+                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/tree/main/code" target="_blank">Online Bidding System Source Code</a></li>
+                </ul>
+            </div>
+        </div>
 
-        </section>
+        <div class="horizontal-section">
+            <div class="section-container">
+                <h2>Run Instructions</h2>
+                <ol>
+                    <li>Install Visual Studio.</li>
+                    <li>Clone the repository and navigate to the code folder.</li>
+                    <li>Open the API solution file in the BiddingApi folder.</li>
+                    <li>Use the command "update-database --verbose" in the Package Manager Console to create the database.</li>
+                    <li>Run the program.</li>
+                    <li>Open the WebApp solution file in the BiddingApp folder.</li>
+                    <li>Run the program.</li>
+                    <li>Users need to sign up and log in if they don't have an account.</li>
+                </ol>
+            </div>
 
-        <footer class="mt-4">
-            <h2>Contact Us</h2>
-            <ul>
-                <li>Email: <a href="projtechlite@gmail.com"></a>projtechlite@gmail.com</li>
-                <li>GitHub Repository: <a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech" target="_blank">GitHub Repo</a></li>
-            </ul>
-        </footer>
+            <div class="section-container">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>Email: <a href="mailto:projtechlite@gmail.com">projtechlite@gmail.com</a></li>
+                    <li>GitHub Repository: <a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech" target="_blank">GitHub Repo</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
