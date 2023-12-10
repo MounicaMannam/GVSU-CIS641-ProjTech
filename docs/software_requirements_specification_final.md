@@ -217,11 +217,29 @@ This section establishes a vital link between the various artifacts developed fo
 
 ## Use Case Diagram Traceability
 
-| Artifact ID  | Artifact Name | Requirement ID |
+## Use Case Diagram Traceability
+
+| Artifact ID | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
-| UseCase1 | Buyer | FR1-9, FR11-15, FR26, FR29, NFR25|
-| UseCase2| Seller | FR1-7,  FR17-22, FR24-26, FR29, NFR25 |
-| UseCase3| Admin | FR23, FR31-37 |
+| AdminViewDetails | View Details for both Buyer and Seller | FR32 |
+| AdminViewProductDetails | View Product Details | FR23 |
+| AdminCheckBiddingDetails | Check Bidding Details | FR31 |
+
+| Artifact ID | Artifact Name | Requirement ID |
+| :-------------: | :----------: | :----------: |
+| BuyerBrowseCatalog | Browse Catalog to look for item | FR8 |
+| BuyerCreateAuction | Create Auction by Uploading Item | FR17 |
+| BuyerSetPrice | Set Price for Items | FR8, FR10 |
+| BuyerSellItem | Sell Item | FR38 |
+| BuyerCheckBidStatus | Check Bid Status | FR9 |
+
+| Artifact ID | Artifact Name | Requirement ID |
+| :-------------: | :----------: | :----------: |
+| SellerBrowseCatalog | Browse Catalog to look for item | FR21 |
+| SellerBidForProduct | Bid for Product | FR8 |
+| SellerCheckBidStatus | Check Bid Status | FR9 |
+| SellerAuctionEnds | Auction Ends (Winner Declared) | FR38 |
+
 
 ## Class Diagram Traceability
 
