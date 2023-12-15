@@ -10,16 +10,13 @@ The Online Bidding System project is to create a platform where community member
   
 ## Prerequisites
 1.Visual Studio code
-   * Step 1: Visit the [official website](https://code.visualstudio.com/docs/?dv=win) of the Visual Studio Code using any web browser like Google Chrome, Microsoft Edge, etc.
-   * Press the “Download for Windows” button on the website to start the download of the Visual Studio Code Application.
-   * When the download finishes, then the Visual Studio Code icon appears in the downloads folder.
-   * Click on the installer icon to start the installation process of the Visual Studio Code.
-   * After the Installer opens, it will ask you for accepting the terms and conditions of the Visual Studio Code. Click on I accept the agreement and then click the Next button.
-   * Choose the location data for running the Visual Studio Code. It will then ask you for browsing the location. Then click on Next button.
-   * Then it will ask for beginning the installing setup. Click on the Install button.
-   * After clicking on Install, it will take about 1 minute to install the Visual Studio Code on your device.
-   *  After the Installation setup for Visual Studio Code is finished, it will show a window like this below. Tick the “Launch Visual Studio Code” checkbox and then click Next.
-   * After the previous step, the Visual Studio Code window opens successfully. Now you can create a new file in the Visual Studio Code window and choose a language of yours to begin your programming journey!
+* Go to the website to download the application.
+  [website link](https://code.visualstudio.com/Download)
+* Click on the download for windows option for windows to     download.
+* Open the downloaded file and do necessary steps and accept  terms and conditions.
+* Choose the location to install the application into your computer and complete the process.
+* Once the process is completed there are no other fancy requirements to do just go to the application click on open application and start coding!
+
 2.Microsoft SQL Server Management Studio 
 ## Run Instructions
 * Install visual studio 
