@@ -17,6 +17,8 @@ The Online Bidding System project is to create a platform where community member
 * Choose the location to install the application into your computer and complete the process.
 * Once the process is completed there are no other fancy requirements to do just go to the application click on open application and start coding!
 
+* we referred this from this sitation [Reference link](https://www.geeksforgeeks.org/how-to-install-visual-studio-code-on-windows/)
+
 2.Microsoft SQL Server Management Studio 
 ## Run Instructions
 * Install visual studio 
