@@ -1,163 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>ProjTech - Online Bidding System</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Add Bootstrap CSS and JavaScript links -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProjTech | Online Bidding System</title>
+  <meta
+    name="description"
+    content="ProjTech - Online Bidding System project overview, artifacts, documentation, and run instructions for the ASP.NET auction platform."
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --surface-2: #f8fafc;
+      --text: #172033;
+      --muted: #5f6b7a;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --border: #e5eaf2;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+    }
 
-    <style>
-        /* Your existing CSS styles here */
+    * {
+      box-sizing: border-box;
+    }
 
-        /* Gradient background */
-        body {
-            background: linear-gradient(to bottom, #87CEEB, #f9e0b0); /* Gradient from light blue to light sandy tone */
-            color: #333;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        /* Header */
-        .header-bg {
-            background-color: #ff7f50; /* Coral header background for contrast */
-        }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.08), transparent 26%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
 
-        /* Title with contrasting color */
-        h1, h2 {
-            color: #ff7f50; /* Coral titles for contrast */
-        }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
 
-        /* Links with contrasting color */
-        a {
-            color: #4b0082; /* Indigo links for better visibility */
-        }
-        a:hover {
-            color: #8a2be2; /* Slightly darker indigo on hover */
-        }
+    a:hover {
+      color: var(--primary-dark);
+    }
 
-        /* Semi-transparent background for text */
-        .text-bg {
-            background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
-            padding: 15px; /* Add some padding for better readability */
-            border-radius: 5px; /* Rounded corners for the background */
-        }
+    .container {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
 
-        /* Rectangular profile image */
-        .profile-image {
-            max-width: 100%; /* Ensure the image doesn't exceed its container */
-            height: auto; /* Maintain the image's aspect ratio */
-            object-fit: cover; /* Crop the image if necessary to fit within the container */
-        }
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.86);
+      border-bottom: 1px solid rgba(229, 234, 242, 0.8);
+    }
 
-        /* New styles for horizontal arrangement */
-        .horizontal-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 72px;
+      gap: 16px;
+    }
 
-        .horizontal-section h2 {
-            flex-basis: 100%;
-            margin-top: 20px;
-        }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--text);
+    }
 
-        .horizontal-section .section-container {
-            flex-basis: 48%; /* Adjust the width as needed */
-        }
+    .brand-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: linear-gradient(135deg, var(--primary), #60a5fa);
+      box-shadow: var(--shadow);
+    }
 
-        .section-container ul {
-            list-style: none;
-            padding: 0;
-        }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
 
-        .section-container h2 {
-            margin-bottom: 10px;
-        }
-    </style>
+    .nav-links a {
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover {
+      background: #eef4ff;
+      color: var(--primary);
+    }
+
+    .hero {
+      padding: 56px 0 28px;
+    }
+
+    .hero-card {
+      background: linear-gradient(135deg, #1d4ed8, #3b82f6 60%, #60a5fa);
+      color: white;
+      border-radius: 28px;
+      padding: 42px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      right: -60px;
+      top: -40px;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      right: 70px;
+      bottom: -70px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.1;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 760px;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.06rem;
+    }
+
+    .hero-actions {
+      margin-top: 26px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: white;
+      color: var(--primary-dark);
+    }
+
+    .btn-primary:hover {
+      background: #eff6ff;
+      color: var(--primary-dark);
+    }
+
+    .btn-outline {
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.16);
+      color: white;
+    }
+
+    .stats {
+      margin: 26px 0 10px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .stat {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .stat h3 {
+      margin: 0 0 6px;
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+
+    .stat p {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    section {
+      margin: 28px 0;
+    }
+
+    .section-title {
+      font-size: 1.7rem;
+      margin: 0 0 16px;
+    }
+
+    .section-subtitle {
+      margin: -6px 0 20px;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      gap: 22px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h2,
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+
+    .overview p {
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .pill {
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: #eef4ff;
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .link-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .link-list li a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .link-list li a:hover {
+      transform: translateY(-2px);
+      border-color: #cfe0ff;
+      background: #f3f8ff;
+    }
+
+    .run-steps {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 14px;
+    }
+
+    .run-steps li {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .run-steps li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .step-number {
+      min-width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: #eef4ff;
+      color: var(--primary-dark);
+      font-weight: 800;
+    }
+
+    .contact-box {
+      display: grid;
+      gap: 14px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      background: var(--surface-2);
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      font-weight: 600;
+    }
+
+    footer {
+      padding: 20px 0 42px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .grid,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        padding: 28px;
+      }
+
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 0;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <div class="container mt-4">
-        <header>
-            <h1 class="header-bg text-white p-3 text-center">ProjTech - Online Bidding System</h1>
-        </header>
-
-        <div class="row mt-4">
-            <div class="col-md-4 text-center">
-                <img src="https://raw.githubusercontent.com/MounicaMannam/GVSU-CIS641-ProjTech/main/artifacts/ProjTech%20Logo.jpg" alt="ProjTech Logo" class="img-fluid profile-image">
-            </div>
-
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Project Overview</h2>
-                        <p class="card-text text-bg">
-                            The project "Online Bidding System" is the software developed to simplify the communication process between the Seller and the Buyer. The software operators include the admin, the Seller, and the Buyers. The seller is responsible for selling a product on the site where other people can buy it based on their winning in the auction. This information is stored in the database along with their details.
-                        </p>
-                        <p class="card-text text-bg">
-                            The admin can view Customer and Seller details, Auction details, Auction winning report, and Product details. When a person places a bid on a particular product, then they are eligible to place an order for the product when they win the auction by the end of the date when the auction closes. The system can thus reduce complexity in maintaining Bidding details and ease the process of Auction for a Product. The project is developed on the ASP .Net platform and supported by an SQL database to store user-specific details.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="horizontal-section">
-            <div class="section-container">
-                <h2>Project Artifacts</h2>
-                <ul>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/System%20Request.pdf" target="_blank">System Request</a></li>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Use%20Case%20Diagrams.pdf" target="_blank">Use Case Diagrams</a></li>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Activity%20Diagrams.pdf" target="_blank">Activity Diagrams</a></li>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/CRC%20Card.pdf" target="_blank">CRC Card</a></li>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Class%20Diagram.pdf" target="_blank">Class Diagram</a></li>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Object%20Diagram.pdf" target="_blank">Object Diagram</a></li>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Class%20Diagrams.pdf" target="_blank">Final Project Class Diagram </a></li>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Object%20Diagrams.pdf" target="_blank">Final Project Object Diagram </a></li>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/ER%20Diagram.pdf" target="_blank">ER Diagram </a></li>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Database%20Schema.pdf" target="_blank">Database Schema</a></li>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Windows%20Navigation%20Diagram%20IC.pdf" target="_blank">Windows Navigation Diagram</a></li>
-                </ul>
-            </div>
-
-            <div class="section-container">
-                <h2>Project Documents</h2>
-                <ul>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/docs/proposal-template.md" target="_blank">System Proposal</a></li>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/docs/software_requirements_specification.md" target="_blank">Software Requirement Specifications</a></li>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/docs/software_requirements_specification_final.md" target="_blank">Final Software Requirement Specifications</a></li>
-                    <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/tree/main/code" target="_blank">Online Bidding System Source Code</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="horizontal-section">
-            <div class="section-container">
-                <h2>Run Instructions</h2>
-                <ol>
-                    <li>Install Visual Studio.</li>
-                    <li>Clone the repository and navigate to the code folder.</li>
-                    <li>Open the API solution file in the BiddingApi folder.</li>
-                    <li>Use the command "update-database --verbose" in the Package Manager Console to create the database.</li>
-                    <li>Run the program.</li>
-                    <li>Open the WebApp solution file in the BiddingApp folder.</li>
-                    <li>Run the program.</li>
-                    <li>Users need to sign up and log in if they don't have an account.</li>
-                </ol>
-            </div>
-
-            <div class="section-container">
-                <h2>Contact Us</h2>
-                <ul>
-                    <li>Email: <a href="mailto:projtechlite@gmail.com">projtechlite@gmail.com</a></li>
-                    <li>GitHub Repository: <a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech" target="_blank">GitHub Repo</a></li>
-                </ul>
-            </div>
-        </div>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-badge"><i class="fa-solid fa-gavel"></i></div>
+        <span>ProjTech</span>
+      </div>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#resources">Resources</a>
+        <a href="#run">Run Guide</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
-</body>
+  </nav>
 
+  <header class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="eyebrow">
+          <i class="fa-solid fa-code"></i>
+          ASP.NET + SQL Based Auction Platform
+        </div>
+        <h1>ProjTech — Online Bidding System</h1>
+        <p>
+          A full-stack auction platform designed to simplify bidding workflows for buyers,
+          sellers, and administrators, with secure user management, auction tracking,
+          reporting, and database-backed product handling.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/tree/main/code" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            View Source Code
+          </a>
+          <a class="btn btn-outline" href="#run">
+            <i class="fa-solid fa-play"></i>
+            Run Instructions
+          </a>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <h3>3</h3>
+          <p>User Roles</p>
+        </div>
+        <div class="stat">
+          <h3>10+</h3>
+          <p>Project Artifacts</p>
+        </div>
+        <div class="stat">
+          <h3>ASP.NET</h3>
+          <p>Core Platform</p>
+        </div>
+        <div class="stat">
+          <h3>SQL</h3>
+          <p>Persistent Storage</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="overview" class="card overview">
+      <h2 class="section-title">Project Overview</h2>
+      <p>
+        The Online Bidding System was developed to simplify the communication and transaction process between sellers and buyers in an auction environment. The platform supports multiple user roles including admin, seller, and buyer, with role-specific workflows backed by a relational database.
+      </p>
+      <p>
+        Sellers can list products for auction, buyers can place bids and place orders after winning, and administrators can manage customer details, seller records, auction outcomes, reports, and product data. The system reduces complexity in maintaining auction activity and improves the overall product bidding experience.
+      </p>
+
+      <div class="pill-row">
+        <span class="pill">Role-Based Access</span>
+        <span class="pill">Auction Management</span>
+        <span class="pill">Order Workflow</span>
+        <span class="pill">Admin Reporting</span>
+        <span class="pill">SQL Persistence</span>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2 class="section-title">Project Resources</h2>
+      <p class="section-subtitle">
+        Documentation, design artifacts, specifications, and source code used throughout the project lifecycle.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3><i class="fa-regular fa-folder-open"></i> Project Artifacts</h3>
+          <ul class="link-list">
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/System%20Request.pdf" target="_blank"><span>System Request</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Use%20Case%20Diagrams.pdf" target="_blank"><span>Use Case Diagrams</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Activity%20Diagrams.pdf" target="_blank"><span>Activity Diagrams</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/CRC%20Card.pdf" target="_blank"><span>CRC Card</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Class%20Diagram.pdf" target="_blank"><span>Class Diagram</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Object%20Diagram.pdf" target="_blank"><span>Object Diagram</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Class%20Diagrams.pdf" target="_blank"><span>Final Project Class Diagram</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Final%20Update%20Object%20Diagrams.pdf" target="_blank"><span>Final Project Object Diagram</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/ER%20Diagram.pdf" target="_blank"><span>ER Diagram</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Database%20Schema.pdf" target="_blank"><span>Database Schema</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/artifacts/Windows%20Navigation%20Diagram%20IC.pdf" target="_blank"><span>Windows Navigation Diagram</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3><i class="fa-regular fa-file-lines"></i> Project Documents</h3>
+          <ul class="link-list">
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/docs/proposal-template.md" target="_blank"><span>System Proposal</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/docs/software_requirements_specification.md" target="_blank"><span>Software Requirement Specifications</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/blob/main/docs/software_requirements_specification_final.md" target="_blank"><span>Final Software Requirement Specifications</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech/tree/main/code" target="_blank"><span>Online Bidding System Source Code</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid" id="run">
+      <div class="card">
+        <h3><i class="fa-solid fa-play-circle"></i> Run Instructions</h3>
+        <ol class="run-steps">
+          <li><span class="step-number">1</span><div>Install Visual Studio.</div></li>
+          <li><span class="step-number">2</span><div>Clone the repository and navigate to the <strong>code</strong> folder.</div></li>
+          <li><span class="step-number">3</span><div>Open the API solution file inside the <strong>BiddingApi</strong> folder.</div></li>
+          <li><span class="step-number">4</span><div>Run <strong>update-database --verbose</strong> in Package Manager Console to create the database.</div></li>
+          <li><span class="step-number">5</span><div>Run the API project.</div></li>
+          <li><span class="step-number">6</span><div>Open the WebApp solution file inside the <strong>BiddingApp</strong> folder.</div></li>
+          <li><span class="step-number">7</span><div>Run the WebApp project.</div></li>
+          <li><span class="step-number">8</span><div>Sign up or log in to start using the system.</div></li>
+        </ol>
+      </div>
+
+      <div class="card" id="contact">
+        <h3><i class="fa-regular fa-address-card"></i> Contact & Repository</h3>
+        <div class="contact-box">
+          <div class="contact-item">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:projtechlite@gmail.com">projtechlite@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/MounicaMannam/GVSU-CIS641-ProjTech" target="_blank">
+              GitHub Repository
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    ProjTech – Online Bidding System • Project Showcase Page
+  </footer>
+</body>
 </html>
